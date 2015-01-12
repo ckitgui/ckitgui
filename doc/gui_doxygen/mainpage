@@ -1,0 +1,32 @@
+//--------- Hauptgruppe "Related Pages" --------------
+
+/*! \mainpage
+
+\version V.<VERSION>
+
+\date <DATE>
+
+
+\image html c-kit-gui-gtk.jpg
+
+<pre>
+
+Homepage: <A HREF="http://www.gCAD3D.org/gui/devdoc/index.htm"> www.gCAD3D.org/C-KIT-GUI-GTK</A>
+
+License:
+
+  C-KIT-GUI-GTK is GPLv3, see <A HREF="../../LICENSE_GPLv3.txt">GPLv3.txt</A>
+
+
+  See Related Pages: 
+    \ref Introduction
+    \ref TODO
+    \ref Download
+
+
+</pre>
+*/
+
+
+
+// EOF

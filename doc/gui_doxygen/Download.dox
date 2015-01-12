@@ -1,0 +1,30 @@
+/*! \page Download
+<pre>
+<h2>Download C-KIT-GUI-GTK</h2>
+
+
+<br>
+<b>Install from git-repository:</b>
+// start commandline (eg gnome-terminal)
+cd
+mkdir ckitgui
+cd ckitgui
+git clone https://github.com/ckitgui/ckitgui
+
+
+
+<br>
+<b>Download-package Linux:</b>
+from gcad3d.org:
+<A HREF="../../C-KIT-GUI-GTK-0.60-Linux.tar.gz">C-KIT-GUI-GTK-0.60-Linux</A>
+
+
+<br>
+<b>Download-package MS-Windows:</b>
+from gcad3d.org:
+<A HREF="../../C-KIT-GUI-GTK-0.60-MS.zip">C-KIT-GUI-GTK-0.60-MS</A>
+
+
+
+</pre>
+*/
