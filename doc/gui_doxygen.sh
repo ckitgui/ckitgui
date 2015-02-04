@@ -65,8 +65,8 @@ cat ${doxBase}/mainpage | sed "s/<VERSION>/$version/"  | sed "s/<DATE>/$date/" >
 #exit
 
 
-# create file srcFiles
-make -f c-kit-gui-gtk.mak srclst
+# create file srcFiles (a list of sourcefiles)
+make -f ckitgui.mak srclst
 #cat srcFiles
 
 

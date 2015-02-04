@@ -1,0 +1,14 @@
+# Link & run:
+#  nmake -f tst_gui1.nmak
+
+PRJNAM = tst_gui1
+
+SRC1 =\
+ tst_gui1.c\
+ tst_gui_gl1.c
+
+
+# create executable ..
+!include "..\APP\tst__.nmak"
+
+# EOF

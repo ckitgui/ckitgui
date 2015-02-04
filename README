@@ -47,9 +47,10 @@ Linux Install from git-repository:
 
 // start commandline (eg gnome-terminal)
 cd
-mkdir ckitgui
-cd ckitgui
+mkdir devel
+cd devel
 git clone https://github.com/ckitgui/ckitgui
+// get all files into ~/devel/ckitgui/*
 
 
 __________________________________________________________________
@@ -57,27 +58,29 @@ Linux Install from tarfile:
 
 // start commandline (eg gnome-terminal)
 cd
-mkdir ckitgui
-cd gckitgui
+mkdir devel
+mkdir binLinux32
+mkdir binLinux64
+cd devel
 cp xxx/C-KIT-GUI-GTK-*-Linux.tar.gz .
-gunzip C-KIT-GUI-GTK-*-Linux.tar.gz
-tar xvf C-KIT-GUI-GTK-*-Linux.tar
+unzip ckitgui_V*.zip
+// get all files into ~/devel/ckitgui/*
 
 
 __________________________________________________________________
 Linux Build:
 
-cd ~/ckitgui/src
+cd ~/devel/ckitgui/src
 
 // change gtk-version (VGUI):
 vi options.mak
 
 // ReCreate the shared library:
-cd ~/ckitgui/src/APP
-make -f c-kit-gui-gtk.mak
+cd ~/devel/ckitgui/src/APP
+make -f ckitgui.mak
 
 // Rebuild / start examples:
-cd ~/ckitgui/src/APP
+cd ~/devel/ckitgui/src/APP
 make run -f hello-world.mak
 make run -f tst_lst1.mak
 make run -f tst_lst2.mak
@@ -91,11 +94,11 @@ export UBUNTU_MENUPROXY=
 
 
 // ReCreate documentation:
-cd ~/ckitgui/doc
+cd ~/devel/ckitgui/doc
 ./gui_doxygen.sh
 
 // view documentation:
-xdg-open ~/ckitgui/doc/gui/index.htm
+xdg-open ~/devel/ckitgui/doc/gui/index.htm
 
 
 
@@ -109,7 +112,7 @@ DEVELOPMENT-TOOLS-TAGFILES:
   let &tags = substitute(tagfiles, "\n", "", "g")
   
   Using tagfiles:
-  cd ~/ckitgui/src/APP
+  cd ~/devel/ckitgui/src/APP
   vi -t UME_init
   or use "Ctr-R" inside vim with cursor over function, Ctrl-O = back.
 
@@ -117,9 +120,9 @@ DEVELOPMENT-TOOLS-TAGFILES:
 
 DEVELOPMENT-TOOLS-CSCOPE:
   Use cscope with:
-  cd ~/ckitgui/src/APP
+  cd ~/devel/ckitgui/src/APP
   ./ed
-    update EDITOR in file ~/ckitgui/src/APP/ed.
+    update EDITOR in file ~/devel/ckitgui/src/APP/ed.
 
 
 __________________________________________________________________
@@ -142,37 +145,46 @@ MS-Windows Prerequisites:
     get the gtk-dokumentation from www.gtk.org.
 
 MS-Windows Install (Win-XP Win7 Win8):
-Unpack C-KIT-GUI-GTK-*.**-MS.zip into directory %HOMEDRIVE%%HOMEPATH%
-    all files are in directory %HOMEDRIVE%%HOMEPATH%\guiGtk2
-    the registry is not affected / modified.
+// Unpack C-KIT-GUI-GTK-*.**-MS.zip into directory %HOMEDRIVE%%HOMEPATH%/devel
+  Using a commandshell (cmd):
+  %HOMEDRIVE%       // activate the homedrive
+  cd %HOMEPATH%     // goto homepath
+  mkdir devel       // create new directory
+  cd devel          // goto %HOMEPATH%/devel
+  mkdir ckitgui
+  cd ckitgui
+  // unpack C-KIT-GUI-GTK-*.**-MS.zip here or clone github.com/ckitgui here
+  // the registry is never affected / modified.
+  unzip ckitgui_V*.zip
 
 
-Rebuild / start examples:
-  You will need a commandshell with the correct compiler-environment.
-    You can use the Visual-Studio-Commandwindow or cmd.exe plus e.g.:
-    "C:\Programme\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat"
-       (for VC8)
-    Test MS-compiler with:
+Rebuild  library / examples:
+  // You will need a commandshell with the correct compiler-environment.
+  // You can use the Visual-Studio-Commandwindow or cmd.exe;  e.g. for VC8:
+  "C:\Programme\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat"
+  // Test MS-compiler with:
   cl /?
 
-  %HOMEDRIVE%
-  cd %HOMEPATH%\guiGtk2\gui
+
+ReCreate the shared library:
+  %HOMEDRIVE%                     // activate the homedrive
+  cd %HOMEPATH%\devel\ckitgui\src\APP
+  nmake -f ckitgui.nmak
+  // reCreate and start testprogs
   nmake -f hello-world.nmak
   nmake -f tst_gui1.nmak
   nmake -f tst_gui2.nmak
 
-ReCreate the shared library:
-  cd ..\gui_gtk2_MS
-  nmake -f libgui.nmak
 
 // view documentation:
-hh gui\devdoc\index.htm      <<<<< 
+  cd %HOMEPATH%\devel\ckitgui
+  hh doc\gui\index.htm
 
 
 
 MS-Windows Uninstall:
 cd
-rmdir/s %HOMEDRIVE%%HOMEPATH%\guiGtk2
+rmdir/s %HOMEDRIVE%%HOMEPATH%\devel\ckitgui
 
 
 

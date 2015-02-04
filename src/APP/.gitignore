@@ -1,1 +1,5 @@
 *.tag
+*.obj
+*.pdb
+*.out
+*.log

@@ -44,8 +44,9 @@ export LD_LIBRARY_PATH=../binLinux32 && gdb ../binLinux32/a.out
 #include <ctype.h>
 
 #include "../ut/ut_umem.h"
+#include "../ut/ckit_ut.h"
+
 #include "../gui/gui__.h"
-#include "../gui/ckit_ut.h"
 
 static MemObj  wEd;
 

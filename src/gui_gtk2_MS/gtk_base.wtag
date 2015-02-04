@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/darren@hiebert.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://darren.hiebert.com/ctags/	/official site/
+!_TAG_PROGRAM_VERSION	3.5.1	/with C, C++, Eiffel, Fortran, and Java  support/
+GUI_GTK	..\gui_gtk2_MS\gtk_base.c	/^void GUI_GTK(){}$/;"	f
+GUI_Init__	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_Init__ (char *fRC) {$/;"	f
+GUI_Init_style	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_Init_style (void *win1) {$/;"	f
+GUI_OBJ_SRC	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_OBJ_SRC (MemObj *mo) {$/;"	f
+GUI_OBJ_TYP	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_OBJ_TYP (MemObj *mo) {$/;"	f
+GUI_SETDAT_E	..\gui_gtk2_MS\gtk_base.c	/^  void** GUI_SETDAT_E (int ie) {$/;"	f
+GUI_SETDAT_EI	..\gui_gtk2_MS\gtk_base.c	/^  void** GUI_SETDAT_EI (int ie, int ii) {$/;"	f
+GUI_SETDAT_ES	..\gui_gtk2_MS\gtk_base.c	/^  void** GUI_SETDAT_ES (int ie, char *is) {$/;"	f
+GUI_Tip	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_Tip (char* txt) {$/;"	f
+GUI_WinTit	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_WinTit (MemObj *mo, char *wtit) {$/;"	f
+GUI_Win_Id	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_Id () {$/;"	f
+GUI_Win__	..\gui_gtk2_MS\gtk_base.c	/^  MemObj GUI_Win__ (char *wtit, void *funcnam, char *opts) {$/;"	f
+GUI_Win_button	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_button (void *parent, void *ev, void *data) {$/;"	f
+GUI_Win_ev_button	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_ev_button (MemObj *o_par, void *fButton) {$/;"	f
+GUI_Win_ev_key	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_ev_key (MemObj *o_par, void *fKey) {$/;"	f
+GUI_Win_exist	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_exist (char *winTit) {$/;"	f
+GUI_Win_exit	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_exit (void *parent, MemObj mo) { $/;"	f
+GUI_Win_go	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_go (MemObj *o_par) {$/;"	f
+GUI_Win_key	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_key (void *parent, void *event, void *data) {$/;"	f
+GUI_Win_kill	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_Win_kill (MemObj *mo) {$/;"	f
+GUI_Win_raise	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_raise (MemObj *mo) {$/;"	f
+GUI_Win_tit	..\gui_gtk2_MS\gtk_base.c	/^  char* GUI_Win_tit (void *gtkWin) {$/;"	f
+GUI_Win_up	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_Win_up (MemObj *parentWin, MemObj *o_win, int typ) {$/;"	f
+GUI_box__	..\gui_gtk2_MS\gtk_base.c	/^  MemObj GUI_box__ (MemObj *o_par, int typ, char *opts) {$/;"	f
+GUI_box_h	..\gui_gtk2_MS\gtk_base.c	/^  MemObj GUI_box_h (MemObj *o_par, char *opts) {$/;"	f
+GUI_box_v	..\gui_gtk2_MS\gtk_base.c	/^  MemObj GUI_box_v (MemObj *o_par, char *opts) {$/;"	f
+GUI_ck_version	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_ck_version (int vMaj, int vMin) {$/;"	f
+GUI_cursor__	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_cursor__ (MemObj *mo, int iCur) {$/;"	f
+GUI_get_keys_mod	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_get_keys_mod () {$/;"	f
+GUI_get_version	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_get_version (char *SW, int *vMaj, int *vMin) {$/;"	f
+GUI_idle__	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_idle__ (void *funcnam, void *data) {$/;"	f
+GUI_is_alive	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_is_alive (int winId) {$/;"	f
+GUI_is_win_alive	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_is_win_alive (void *win) {$/;"	f
+GUI_key_set1	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_key_set1 (int ikey) {$/;"	f
+GUI_main_quit	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_main_quit () {$/;"	f
+GUI_obj_focus	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_obj_focus (MemObj *mo) {$/;"	f
+GUI_packwn	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_packwn (void *parent, void *wi, int hsiz, int vsiz) {$/;"	f
+GUI_sep__	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_sep__ (MemObj *o_par, int typ, int border) {$/;"	f
+GUI_set_enable	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_set_enable (MemObj *mo, int mode) {$/;"	f
+GUI_set_show	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_set_show (MemObj *mo, int mode) {$/;"	f
+GUI_siz_eval	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_siz_eval (int *ihs, int *ivs, int hsiz, int vsiz) {$/;"	f
+GUI_siz_set	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_siz_set (void *parent, int hSiz, int vSiz) {$/;"	f
+GUI_spc__	..\gui_gtk2_MS\gtk_base.c	/^  void GUI_spc__ (MemObj *o_par, int typ, int spc) {$/;"	f
+GUI_timer__	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_timer__ (void *funcnam, int interval, void *data) {$/;"	f
+GUI_update__	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_update__ () {$/;"	f
+GUI_w_pack1	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_w_pack1 (int pTyp, void *pObj, void *cObj, char *opts) {$/;"	f
+GUI_w_pack2	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_w_pack2 (int pTyp, void *pObj, void *cObj, char *opts) {$/;"	f
+GUI_w_pack_b	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_w_pack_b (int pTyp, void *pObj, void *cObj,$/;"	f
+GUI_w_pack_d	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_w_pack_d (int *isx, int *isy, int *iex, int *iey, char *siz) {$/;"	f
+GUI_w_pack_w	..\gui_gtk2_MS\gtk_base.c	/^  int GUI_w_pack_w (int pTyp, void *pObj, void *cObj,$/;"	f
+UI_act_Id	..\gui_gtk2_MS\gtk_base.c	/^static int       UI_act_Id;$/;"	v	file:
+UI_stylTab	..\gui_gtk2_MS\gtk_base.c	/^  GtkStyle *UI_stylTab[3];                        \/\/ 0=default; 1=red; 2=blue$/;"	v
+colB1	..\gui_gtk2_MS\gtk_base.c	/^  GdkColor  colB1 = {0x0000, 0x0010, 0x0010, 0xc000};   \/\/ blue$/;"	v
+colB2	..\gui_gtk2_MS\gtk_base.c	/^  GdkColor  colB2 = {0x0000, 0xa000, 0xa000, 0xf000};   \/\/ blue-light$/;"	v
+colR	..\gui_gtk2_MS\gtk_base.c	/^  GdkColor  colR = {0x0000, 0xc000, 0x1000, 0x1000};   \/\/ red$/;"	v

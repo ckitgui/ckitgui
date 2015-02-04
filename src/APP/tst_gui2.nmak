@@ -1,0 +1,16 @@
+# Link & run:
+#  nmake -f tst_gui2.nmak
+
+PRJNAM = tst_gui2
+
+SRC1 =\
+ tst_gui2.c\
+ tst_gui_gl2.c\
+ trackball.c\
+ surf2.c
+
+
+# create executable ..
+!include "..\APP\tst__.nmak"
+
+# EOF

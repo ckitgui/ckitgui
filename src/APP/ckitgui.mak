@@ -1,5 +1,5 @@
-# Create GUI-dll for Gtk:   make -f c-kit-gui-gtk.mak
-# delete obj's:             make remove -f c-kit-gui-gtk.mak
+# Create GUI-dll for Gtk:   make -f ckitgui.mak
+# delete obj's:             make remove -f ckitgui.mak
 # check config:             vi options.mak
 
 
@@ -22,7 +22,8 @@ DLLNAM := libgui_$(VGUI)
 SRC1 := $(SRCGUI)\
  ../ut/ut_umem.c\
  ../ut/ut_umb.c\
- ../gui/ckit_ut.c
+ ../ut/ckit_ut.c\
+ ../ut/ckit_os_ut_x.c
 
 
 # dirs

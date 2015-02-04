@@ -1,0 +1,63 @@
+# Link & run:
+#  nmake -f hello-world.nmak
+
+PRJNAM = hello-world
+
+SRC1 =\
+ hello-world.c
+
+# get OS OUTDIR VGUI (Version GTK)
+!include ..\options.nmak
+
+
+# get DEB CPDEB LKDEB
+!include "..\APP\deb.nmak"
+
+
+# get GUICP GUILIBS SRCGUI LIBGUI
+# get SRCGUI (filList), GUICP (compile with gui), LIBGUI (link with gui)
+!include ../gui/gui_$(VGUI).nmak
+
+
+# get OpenGL-libs
+# get LIBOGL
+!include "..\APP\ogl.nmak"
+
+
+# get LIB_BAS LKFLG
+# get LIB_BAS (Basiclibs for MS-VC (libcmt, Kernel32 ..)) 
+!include "..\APP\bas_$(OS).nmak"
+
+
+# get OBJ* from SRC*
+# OBJ1 OBJG OBJA OBJOGL OBJGLB OBJGUI OBJOS
+!include "..\APP\src2obj1.nmak"
+
+
+
+
+CPFLG =\
+ /nologo\
+ $(CPDEB)\
+ -D$(VGUI)\
+ /Od
+
+
+LKFLG = $(LKDEF) /SUBSYSTEM:CONSOLE
+
+
+default: $(OBJ1) $(LIBGUI)
+	@echo ================== Link =====================
+	$(CC) $(OBJ1)\
+ $(LIBGUI) $(LIBOGL) $(LIB_BAS)\
+ $(LKFLG)
+	move/Y $(PRJNAM).exe $(OUTDIR)\.
+	cd $(OUTDIR)
+	$(PRJNAM).exe
+	exit
+
+
+# compile c -> obj using CPFLG
+!include "..\APP\compile.nmak"
+
+# EOF

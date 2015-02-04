@@ -43,8 +43,9 @@ make -f c-kit-gui-gtk.mak && make run -f tst_lst1.mak
 
 
 #include "../ut/ut_umem.h"
+#include "../ut/ckit_ut.h"
+
 #include "../gui/gui__.h"
-#include "../gui/ckit_ut.h"
 
 static MemObj  wLst = GUI_OBJ_NEW;
 

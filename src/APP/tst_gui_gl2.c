@@ -58,9 +58,9 @@ List_functions_end:
 #include <GL/gl.h>
 
 #include "../ut/ut_umem.h"
+#include "../ut/ckit_ut.h"
 
 #include "../gui/gui__.h"             // GUI_*
-#include "../gui/ckit_ut.h"
 
 #include "tst_gui_gl2.h"
 #include "tst_geo.h"                    // Pointf

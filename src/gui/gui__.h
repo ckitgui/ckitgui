@@ -53,7 +53,7 @@ void GUI(){}
 #endif
 
 #ifdef gtk2_MS
-#include "../gui_gtk2_MS/gui_MS.h"
+#include "../gui_gtk2_MS/gui__.h"
 #endif
 
 

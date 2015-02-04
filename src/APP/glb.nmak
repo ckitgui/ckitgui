@@ -1,0 +1,10 @@
+#
+SRCGLB =\
+ ..\gui_$(VGUI)\GL_C-KIT.c\
+ ..\gui_$(VGUI)\gtk_gl_MS.c\
+ ..\gtkglarea\gdkgl.c\
+ ..\gtkglarea\gtkglarea.c
+
+CPGLB = /I ..\gtkglarea
+
+# eof
