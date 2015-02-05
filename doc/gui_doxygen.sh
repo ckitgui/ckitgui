@@ -45,14 +45,14 @@ export srcDirs
 
 # all dox-files; this makes the main-menu.
 # Do not change first line (sourcedirectories)
-files="${srcDirs}\
+myFiles="${srcDirs}\
  ${doxBase}/mainpage.dox\
  ${doxBase}/Introduction.dox\
  ${doxBase}/Sourcefiles.dox\
  ${doxBase}/Download.dox\
  ${doxBase}/TODO.dox\
 "
-export files
+export myFiles
 
 
 ############# work ..
@@ -60,7 +60,6 @@ cd $srcBase
 
 
 # update version & date in mainpage.dox
-cat ${doxBase}/mainpage
 cat ${doxBase}/mainpage | sed "s/<VERSION>/$version/"  | sed "s/<DATE>/$date/" > ${doxBase}/mainpage.dox
 #exit
 
@@ -85,7 +84,7 @@ cp ${doxBase}/*.jpg ${doxy_path_out}/.
 
 
 # start doxygen
-# doxygen-input: $doxy_prj_nam $doxy_path $files and file Doxyfile
+# doxygen-input: $doxy_prj_nam $doxy_path $myFiles and file Doxyfile
 doxygen ${doxBase}/Doxyfile
 
 

@@ -133,8 +133,10 @@ rm -rf ckitgui
 
 
 
-__________________________________________________________________
-MS-Windows Prerequisites:
+==================================================================
+MS-Windows
+==================================================================
+Prerequisites:
 
   for using C-KIT-GUI-GTK:
     MS-C-Compiler (gcc or MS-Visual-C (C++, Express))
@@ -142,26 +144,31 @@ MS-Windows Prerequisites:
     OpenGL32.lib, Glu32.lib (Microsoft SDKs)
   for modifications of C-KIT-GUI-GTK:
     the package contains all development-files;
-    get the gtk-dokumentation from www.gtk.org.
+    optional: get the gtk-dokumentation from www.gtk.org.
+
 
 MS-Windows Install (Win-XP Win7 Win8):
-// Unpack C-KIT-GUI-GTK-*.**-MS.zip into directory %HOMEDRIVE%%HOMEPATH%/devel
+  The registry is never affected / modified.
+
+Create new directory %HOMEDRIVE%%HOMEPATH%/devel
   Using a commandshell (cmd):
   %HOMEDRIVE%       // activate the homedrive
   cd %HOMEPATH%     // goto homepath
   mkdir devel       // create new directory
   cd devel          // goto %HOMEPATH%/devel
-  mkdir ckitgui
-  cd ckitgui
-  // unpack C-KIT-GUI-GTK-*.**-MS.zip here or clone github.com/ckitgui here
-  // the registry is never affected / modified.
+
+Extract C-KIT-GUI-GTK-*.**-MS.zip into this directory
+  Using a commandshell (cmd):
   unzip ckitgui_V*.zip
+
 
 
 Rebuild  library / examples:
   // You will need a commandshell with the correct compiler-environment.
   // You can use the Visual-Studio-Commandwindow or cmd.exe;  e.g. for VC8:
   "C:\Programme\Microsoft Visual Studio 8\Common7\Tools\vsvars32.bat"
+  // or for VC10 - start a commandwindow with:
+  %comspec% /k ""C:\Program Files\Microsoft Visual Studio 10.0\VC\vcvarsall.bat"" x86
   // Test MS-compiler with:
   cl /?
 
@@ -211,6 +218,7 @@ Directories not controlled by git:
 __________________________________________________________________
 History:
 
+V0.62 / 2015-02-05 changes for git. RF.
 V0.60 / 2014-10-24 Bugfixes, gtk_handle_* removed. RF.
 V0.50 / 2014-01-18 Bugfixes, new ScreenCast-functions GUI_TUT_m__ GUI_TUT_t__ for Gtk3 only. RF
 V0.42 / 2013-09-07 Bugfixes, Minor updates. RF.

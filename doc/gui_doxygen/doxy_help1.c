@@ -1,13 +1,19 @@
 /*  doxy_help1.c
 
 
-loop tru all directories (getenv doxy_dirs); write Sourcefiles.dox.
+loop tru all directories, write Sourcefiles.dox.
 get "\brief " out of sourcefiles ..
+
+
+Inputs:
+Environment  dox_path_src        // path from doxygen-outputDirectory -> srcBase
+Environment  srcDirs             // sourcedirectories
+File         srcFiles            // list of files from ckitgui.mak
 
 
 LINUX ONLY.
 
-Link: ../doc/ckit_dox/doxy_help1.sh
+Link: ../doc/gui_doxygen/doxy_help1.sh
 
 
 */

@@ -7,6 +7,7 @@ OS=Linux${bitNr}
 OUTDIR=../../bin$OS
 
 filNam=${OUTDIR}/doxy_help1
+echo "help-file=" ${filNam}
 
 # TEST ONLY
 #rm -rf ${filNam}
